@@ -21,6 +21,7 @@ public class ForWhile {
 		String[] languages = {"Ruby", "Golang", "Java", "Python", "Typescript", "HTML", "Javascript"};
 		
 		for (int i = 0; i < languages.length; i++) {
+<<<<<<< HEAD
 			if(languages[i] == "Java") {
 				System.out.println("現在学習中の言語はJavaです。");
 				continue;
@@ -29,6 +30,15 @@ public class ForWhile {
 				break;
 			}else {
 				System.out.println(languages[i]);
+=======
+			System.out.println(languages[i]);
+			if(languages[i] == "Java") {
+				System.out.println("現在学習中の言語はJavaです。");
+				continue;
+			}else if(languages[i] == "HTML") {
+				System.out.println("HTMLはプログラミング言語ではありません。");
+				break;
+>>>>>>> branch 'for-while' of git@github.com:ikeda-99/GeekationJavaBasic.git
 			}
 		}
 	}
