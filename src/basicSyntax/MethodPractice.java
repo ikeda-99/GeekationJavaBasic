@@ -13,9 +13,9 @@ public class MethodPractice {
 		int divResult = divNumbers(a, b);
 		
 		results(sumResult);
-        results(subResult);
-        results(mulResult);
-        results(divResult);
+		results(subResult);
+		results(mulResult);
+		results(divResult);
 	}
 
 		public static int sumNumbers(int a , int b) {
