@@ -19,31 +19,34 @@ public class GeekIntroduction{
 		System.out.println(ageMessage);
 		System.out.println(heightMesseage);
 
-		specialSkill(6,9);
+		specialSkill(3,50);
 	}
 
 	public static void specialSkill(int num1, int num2) {
 
+		if (num1 <= 0 || num2 <= 0) {
+			System.out.println("num1とnum2は0より大きい値にしてください。");
+			return;
+		}else if (num1 > num2){
+			System.out.println("num2はnum1より大きい値にしてください。");
+			return;
+		}else if (num1 >= 300 || num2 >= 300){
+			System.out.println("num1とnum2は300以下にしてください。");
+			return;
+		}
+
 		for (int i = num1; i <= num2; i++) {
-			System.out.println(i);
-			if (num1 <= 0 || num2 <= 0) {
-				System.out.println("num1とnum2は0より大きい値にしてください。");
-				break;
-			}else if (num1 > num2){
-				System.out.println("num2はnum1より大きい値にしてください。");
-				break;
-			}else if (num1 >= 300 || num2 >= 300){
-				System.out.println("num1とnum2は300以下にしてください。");
-				break;
-			}else if (num1 % 3 == 0 && num2 % 5 == 0) {
+			if (i % 3 == 0 && i % 5 == 0) {
 				System.out.println("{対象の値}は3の倍数かつ5の倍数です。");
 				continue;
-			}else if (num1 % 3 == 0 || num2 % 3 == 0) {
+			}else if (i % 3 == 0) {
 				System.out.println("{対象の値}は3の倍数です。");
 				continue;
-			}else if (num1 % 5 == 0 || num2 % 5 == 0) {
+			}else if (i % 5 == 0) {
 				System.out.println("{対象の値}は5の倍数です。");
 				continue;
+			}else {
+				System.out.println(i);
 			}
 		}
 	}
