@@ -7,6 +7,7 @@ public class GeekIntroduction{
 		int age = 24;
 		int height = 160;
 		greeting (age, height);
+		specialSkill(3,50);
 	}
 
 	public static void greeting(int age, int height) {
@@ -18,8 +19,6 @@ public class GeekIntroduction{
 		System.out.println(hello);
 		System.out.println(ageMessage);
 		System.out.println(heightMesseage);
-
-		specialSkill(3,50);
 	}
 
 	public static void specialSkill(int num1, int num2) {
