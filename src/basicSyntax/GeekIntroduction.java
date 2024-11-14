@@ -4,10 +4,6 @@ public class GeekIntroduction{
 
 	public static void main(String[] args) {
 
-		int age = 24;
-		int height = 160;
-		greeting (age, height);
-		specialSkill(3,50);
 	}
 
 	public static void greeting(int age, int height) {
@@ -36,13 +32,13 @@ public class GeekIntroduction{
 
 		for (int i = num1; i <= num2; i++) {
 			if (i % 3 == 0 && i % 5 == 0) {
-				System.out.println("{対象の値}は3の倍数かつ5の倍数です。");
+				System.out.println(i + "は3の倍数かつ5の倍数です。");
 				continue;
 			}else if (i % 3 == 0) {
-				System.out.println("{対象の値}は3の倍数です。");
+				System.out.println(i + "は3の倍数です。");
 				continue;
 			}else if (i % 5 == 0) {
-				System.out.println("{対象の値}は5の倍数です。");
+				System.out.println(i + "は5の倍数です。");
 				continue;
 			}else {
 				System.out.println(i);
